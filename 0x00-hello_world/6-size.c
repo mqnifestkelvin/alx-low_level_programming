@@ -6,7 +6,11 @@
  */
 int main(void)
 {
-	int a, b, c, d, e;
+	char a;
+	int b;
+	long int c;
+	long long int d;
+	float e;
 
 	a = sizeof(char);
 	b = sizeof(int);
