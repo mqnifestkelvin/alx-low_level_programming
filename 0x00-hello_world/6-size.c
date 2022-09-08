@@ -19,7 +19,7 @@ int main(void)
 	e = sizeof(float);
 
 	printf("Size of a char: %d byte(s)\n", (unsigned long)a);
-	printf("Size of a int: %d byte(s)\n", (unsigned long)b);
+	printf("Size of an int: %d byte(s)\n", (unsigned long)b);
 	printf("Size of a long int: %d byte(s)\n", (unsigned long)c);
 	printf("Size of a long long: %d byte(s)\n", (unsigned long)d);
 	printf("Size of a float: %d byte(s)\n", (unsigned long)e);
