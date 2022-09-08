@@ -18,10 +18,10 @@ int main(void)
 	d = sizeof(long long);
 	e = sizeof(float);
 
-	printf("Size of a char: %d byte(s) \n", (unsigned long)a);
-	printf("Size of an int: %d byte(s) \n", (unsigned long)b);
-	printf("Size of a long int: %d byte(s) \n", (unsigned long)c);
-	printf("Size of a long long: %d byte(s) \n", (unsigned long)d);
-	printf("Size of a float: %d byte(s) \n", (unsigned long)e);
+	printf("Size of a char: %lu byte(s) \n", (unsigned long)a);
+	printf("Size of an int: %lu byte(s) \n", (unsigned long)b);
+	printf("Size of a long int: %lu byte(s) \n", (unsigned long)c);
+	printf("Size of a long long: %lu byte(s) \n", (unsigned long)d);
+	printf("Size of a float: %lu byte(s) \n", (unsigned long)e);
 	return (0);
 }
