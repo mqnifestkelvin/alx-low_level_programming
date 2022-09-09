@@ -10,7 +10,7 @@ int main(void)
 
 	for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
 	{
-		printf("%c", alphabet);
+		printf("%c ", alphabet);
 	}
 	return (0);
 }
