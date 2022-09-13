@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * abs - Code entry point.
+ * _abs - Code entry point.
  *
  * @number: number is a positive or negative integer
  *
