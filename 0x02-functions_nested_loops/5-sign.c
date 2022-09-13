@@ -1,12 +1,13 @@
 #include "main"
 /**
- * print_sign -
+ * print_sign - Code entry
  *
- * Description: 
+ * Description: A fuction that check if a number is a
+ * negative, positive or zero integer.
  *
- * @c:
+ * @n: The integer value it recieves
  *
- * Return:
+ * Return: 0
  */
 int print_sign(int n)
 {
