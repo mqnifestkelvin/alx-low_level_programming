@@ -2,7 +2,7 @@
 /**
  * _isalpha - Code entry.
  *
- * Description: A function that checks for alphabetic character. 
+ * Description: A function that checks for alphabetic character.
  *
  * @c: The integer value it recieves
  *
