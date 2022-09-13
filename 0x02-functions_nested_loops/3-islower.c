@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * int _islower(int c)
+ * int _islower
  *
  * Description: This program checks for lowercase character.
  *
@@ -9,7 +9,7 @@
 int _islower(int c);
 {
 	int i = 'a';
-	
+
 	for (i = 'a'; i <= 'z'; i++)
 	{
 		/* refer in c*/
