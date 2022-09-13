@@ -2,7 +2,7 @@
 /**
  * abs - Code entry point.
  *
- *@number: number is a positive or negative integer
+ * @number: number is a positive or negative integer
  *
  * Description: A fuction that computes the absolute value of an integer.
  *
@@ -10,13 +10,14 @@
  */
 int abs(int number)
 {
-	int number, result;
+	int result;
+
 	if (number < 0)
 	{
 		result = number * -1;
 		return (result);
 	}
-	else 
+	else
 	{
 		result = number;
 		return (result);
