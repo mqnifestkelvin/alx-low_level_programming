@@ -14,26 +14,26 @@ int print_last_digit(int number)
 
 	if (number < 10 && number > 0)
 	{
-		_putchar(number);
+		_putchar(number + '0');
 	}
 	else if (number == 0)
 	{
-		_putchar(number);
+		_putchar(number + '0');
 	}
 	else if (number >= 10)
 	{
 		result = number % 10;
-		_putchar(result);
+		_putchar(result + '0');
 	}
 	else if (number > -10 && number < 0)
 	{
 		result = number * -1;
-		_putchar(number);
+		_putchar(number + '0');
 	}
 	else if (number <= -10)
 	{
 		result = number % 10;
-		_putchar(result);
+		_putchar(result + '0');
 	}
 	return (0);
 }
