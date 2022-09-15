@@ -1,1 +1,1 @@
-This readme file delves into manual debogging of codes.
+Learning how to debug code.
