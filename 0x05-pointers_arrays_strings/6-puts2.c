@@ -8,7 +8,7 @@
  * Return: 0
  *
  */
-void puts22(char *str)
+void puts2(char *str)
 {
 	int i;
 
@@ -16,8 +16,8 @@ void puts22(char *str)
 	{
 		if (i % 2 == 0)
 		{
-			_putchar(str[i])
+			_putchar(str[i]);
 		}
 	}
-	_putchar('\n')
+	_putchar('\n');
 }
