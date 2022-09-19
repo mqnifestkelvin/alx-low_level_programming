@@ -12,7 +12,7 @@ void puts22(char *str)
 {
 	int i;
 
-	for (i = 0; str[] = '\0'; i++)
+	for (i = 0; str[] != '\0'; i++)
 	{
 		if (i % 2 == 0)
 		{
