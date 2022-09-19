@@ -9,11 +9,11 @@
  */
 void puts_half(char *str)
 {
-	int i, a;
+	int i;
 
 	for (i = 0; str[i] != '\0'; i++)
 		;
-	for (int a = (i + 1) / 2; str[a] != '\0'; a++)
+	for (int i /= 2; str[i] != '\0'; i++)
 	{
 		_putchar(str[i]);
 	}
