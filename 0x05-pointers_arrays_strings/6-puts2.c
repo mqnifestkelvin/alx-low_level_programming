@@ -8,7 +8,7 @@
  * Return: 0
  *
  */
-void puts22(char *str);
+void puts22(char *str)
 {
 	int i;
 
