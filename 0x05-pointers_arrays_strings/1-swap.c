@@ -8,12 +8,12 @@
  *
  * Return: 0
  *
- */i
+ */
 void swap_int(int *a, int *b)
 {
 	int m;
 
 	t = *a;
 	*a = *b;
-	*y = m;
+	*b = m;
 }
