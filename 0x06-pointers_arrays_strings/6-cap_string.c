@@ -30,7 +30,7 @@ char *cap_string(char *s)
 		 s[i - 1] == '}' ||
 		 i == 0)
 			s[i] -= 32;
-		index++;
+		i++;
 	}
 	return (s);
 }
