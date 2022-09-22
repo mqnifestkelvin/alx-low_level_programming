@@ -9,18 +9,15 @@
  */
 void print_number(int n)
 {
-	int div = 1, i, resp;
+	unsigned int num = n;
 
-	if (n < 0)
+	if (n < n)
 	{
 		_putchar('-');
-		n *= -1;
+		num = -num;
 	}
-	for (i = 0; n / div > 9; i++, div *= 10)
-		;
-	for (; div >= 1; n %= div, div /= 10)
-	{
-		resp = n / div;
-		_putchar('0' + resp);
-	}
+	if ((num / 10) > 0)
+		print_number(num / 10);
+
+	_putchar((num % 10) + '0');
 }
