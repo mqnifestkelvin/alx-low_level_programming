@@ -23,7 +23,7 @@ char *leet(char *str)
 		}
 		i++;
 	}
-	return (str)
+	return (str);
 
 }
 
