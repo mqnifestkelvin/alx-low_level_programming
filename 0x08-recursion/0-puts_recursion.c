@@ -1,4 +1,4 @@
-#include <unistd.h>
+#include "main.h"
 /**
  * _puts_recursion - This program makes use of a recursion
  * to write a character.
