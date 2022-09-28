@@ -1,13 +1,13 @@
 #include <unistd.h>
 /**
- * _puts_rev_recursion - This program makes use of a recursion
+ * _puts_recursion - This program makes use of a recursion
  * to write a character.
  *
  * @s: The character to print.
  *
  * Return: One success 1.
  */
-void  _puts_rev_recursion(char *s)
+void  _puts_recursion(char *s)
 {
 	if (*s)
 	{
