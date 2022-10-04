@@ -11,7 +11,7 @@
  */
 char *_strdup(char *str)
 {
-	int i;
+	int i = 0;
 	int size = 0;
 	char *mem;
 
