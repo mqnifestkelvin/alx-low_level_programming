@@ -1,6 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
-
+#include <stdio.h>
 /**
  * _strlen - find length of a string
  * @s: string
@@ -73,7 +73,7 @@ char **strtow(char *str)
 {
 int i;
 int spaces = nbr_spaces(str);
-char **tokens = NULL;//malloc(sizeof(char *) * (spaces));
+char **tokens = NULL; //malloc(sizeof(char *) * (spaces));
 char *token;
 int checkingSpace = 0;
 int word = 0;
