@@ -1,113 +1,102 @@
 #include "main.h"
 #include <stdlib.h>
-#include <stdio.h>
-/**
- * _strlen - find length of a string
- * @s: string
- * Return: int
- */
 
-
-int _strlen(char *s)
-{
-int size = 0;
-for (; s[size] != '\0'; size++)
-;
-return (size);
-}
+int word_len(char *str);
+int count_words(char *str);
+char **strtow(char *str);
 
 /**
- * *str_concat - concatenates two strings
- * @s1: string 1
- * @s2: string 2
- * Return: pointer
+ * word_len - Locates the index marking the end of the
+ *            first word contained within a string.
+ * @str: The string to be searched.
+ *
+ * Return: The index marking the end of the initial word pointed to by str.
  */
-
-char *str_addChar (char *str, char c)
+int word_len(char *str)
 {
-int size, i;
-char *m;
+	int index = 0, len = 0;
 
-size = _strlen(str);
-
-m = malloc((size + 1) * sizeof(char) + 1);
-if (m == 0)
-	return (0);
-
-for (i = 0; i <= size; i++)
-	m[i] = str[i];
-
-m[i + 1] = c;
-m[i + 2] = '\0';
-
-return (m);
-}
-
-
-/**
- * *nbr_spaces - return the number of occurent of a string
- * @s: string to check
- * Return: int
- */
-
-unsigned int nbr_spaces(char *s)
-{
-	int i, cmpt = 0;
-
-	for (i = 0; s[i + 1] != '\0'; i++)
+	while (*(str + index) && *(str + index) != ' ')
 	{
-		if (s[i]  == ' ' && s[i + 1] != ' ')
-			cmpt++;
+		len++;
+		index++;
 	}
 
-	return (cmpt + 1);
+	return (len);
 }
 
+/**
+ * count_words - Counts the number of words contained within a string.
+ * @str: The string to be searched.
+ *
+ * Return: The number of words contained within str.
+ */
+int count_words(char *str)
+{
+	int index = 0, words = 0, len = 0;
+
+	for (index = 0; *(str + index); index++)
+		len++;
+
+	for (index = 0; index < len; index++)
+	{
+		if (*(str + index) != ' ')
+		{
+			words++;
+			index += word_len(str + index);
+		}
+	}
+
+	return (words);
+}
 
 /**
-  *strtow - split a sentence into multiple words.
-  *@str: the string passed as argument.
-  *Return: tokens
-  */
+ * strtow - Splits a string into words.
+ * @str: The string to be split.
+ *
+ * Return: If str = NULL, str = "", or the function fails - NULL.
+ *         Otherwise - a pointer to an array of strings (words).
+ */
 char **strtow(char *str)
 {
-int i;
-int spaces = nbr_spaces(str);
-char **tokens = NULL; //malloc(sizeof(char *) * (spaces));
-char *token;
-int checkingSpace = 0;
-int word = 0;
+	char **strings;
+	int index = 0, words, w, letters, l;
 
-if (!tokens)
-{
-	printf("Failed");
-	return (0);
-}
-	
+	if (str == NULL || str[0] == '\0')
+		return (NULL);
 
-printf("looping");
-for (i = 0; str[i] != '\0'; i++)
-{
-	if (str[i] == ' ')
+	words = count_words(str);
+	if (words == 0)
+		return (NULL);
+
+	strings = malloc(sizeof(char *) * (words + 1));
+	if (strings == NULL)
+		return (NULL);
+
+	for (w = 0; w < words; w++)
 	{
-		if (checkingSpace == 0)
+		while (str[index] == ' ')
+			index++;
+
+		letters = word_len(str + index);
+
+		strings[w] = malloc(sizeof(char) * (letters + 1));
+
+		if (strings[w] == NULL)
 		{
-			word++;
-			checkingSpace = 1;
-		} 
+			for (; w >= 0; w--)
+				free(strings[w]);
+
+			free(strings);
+			return (NULL);
+		}
+
+		for (l = 0; l < letters; l++)
+			strings[w][l] = str[index++];
+
+		strings[w][l] = '\0';
 	}
-	else
-	{
-		printf("1");
-		token = tokens[word];
-		free(tokens[word]);
-		str_addChar(token, str[i]);
-		checkingSpace = 0;
-	}
+	strings[w] = NULL;
 
-}
-
-tokens[i] = NULL;
-
-return (tokens);
+	return (strings);
 }
