@@ -1,1 +1,1 @@
-This readme explores the nature and use of malloc function for memory allocation.
+0x0C. C - More malloc, free
