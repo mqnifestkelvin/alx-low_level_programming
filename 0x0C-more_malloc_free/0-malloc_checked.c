@@ -9,7 +9,7 @@
  * Return: 98 failure
  * pointer to the allocated memory success.
  */
-void malloc_checked(unsigned int b)
+void *malloc_checked(unsigned int b)
 {
 	void *ptr = malloc(b);
 
