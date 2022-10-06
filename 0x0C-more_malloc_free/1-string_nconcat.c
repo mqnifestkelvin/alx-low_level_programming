@@ -10,11 +10,11 @@
  */
 unsigned int _strlen(char *s)
 {
-	unsigned int lenght;
+	unsigned int length;
 
-	for (size = 0; s[size] != '\0'; size++)
+	for (length = 0; s[length] != '\0'; length++)
 		;
-	return (size);
+	return (length);
 }
 
 /**
@@ -50,7 +50,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	for (i = 0; s2[i] != '\0'; i++)
 		mem[i] = s1[i];
 
-	for (j = 0; s2[j] != '\0' && j < n; i++; j++)
+	for (j = 0; s2[j] != '\0' && j < n; i++, j++)
 		mem[i] = s2[j];
 
 	mem[i] = '\0';
