@@ -29,7 +29,7 @@ unsigned int _strlen(char *s)
  * Return: 0 or empty string.
  */
 
-char string_nconcat(char *s1, char *s2, unsigned int n)
+char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	unsigned int i, j;
 	char *mem;
