@@ -6,7 +6,8 @@
  *
  * @b: The integer passed.
  *
- * Return: 98.
+ * Return: 98 failure
+ * pointer to the allocated memory success.
  */
 void malloc_checked(unsigned int b)
 {
@@ -14,7 +15,7 @@ void malloc_checked(unsigned int b)
 
 	if (ptr == 0)
 	{
-		exit(98);
+		return (98);
 	}
 
 	return (ptr);
