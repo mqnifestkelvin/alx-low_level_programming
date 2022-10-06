@@ -40,7 +40,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		s2 = "";
 
 	if (n < _strlen(s2))
-		mem =  malloc(_strlen(s1) + n * sizeof(mem) + 1);
+		mem =  malloc(_strlen(s1) + n * sizeof(char) + 1);
 	else
 		mem = malloc(_strlen(s1) + _strlen(s2) + 1);
 
