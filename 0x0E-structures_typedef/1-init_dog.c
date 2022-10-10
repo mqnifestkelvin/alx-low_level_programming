@@ -16,8 +16,9 @@ void init_dog(struct dog *d, char *name, float age, char *owner)
 {
 	if (d != 0)
 	{
+		dog Dog;
 		dog *ptr;
-		ptr = d;
+		ptr = &Dog;
 
 		(*ptr).name = name;
 		(*ptr).age = age;
