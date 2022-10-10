@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include "dog.h"
-#include <stdlib>
+#include <stdlib.h>
 
 /**
  * _strlen - Prints the length of a string.
@@ -12,7 +12,7 @@
 int _strlen(char *s)
 {
 	int i;
-	
+
 	for (i = 0; s[i] != '\0'; i++)
 		;
 	return (i);
@@ -27,13 +27,13 @@ int _strlen(char *s)
  *
  * Return: pointer of destination string.
  */
-char *_strcyp(char *dest, char *src)
+char *_strcpy(char *dest, char *src)
 {
 	int i;
 
 	for (i = 0; src[i] != '\0'; i++)
 	{
-		dest[i] = scr[i];
+		dest[i] = src[i];
 	}
 
 	dest[i] = '\0';
@@ -48,6 +48,8 @@ char *_strcyp(char *dest, char *src)
  * @age: Float.
  *
  * @owner: Character array.
+ *
+ * Return: Pointer to new dog.
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
