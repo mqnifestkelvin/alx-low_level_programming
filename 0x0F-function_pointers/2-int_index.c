@@ -11,12 +11,12 @@
  * Otherwise - The index of the first element for which
  * the cmp function does not return ).
  */
-int int_index(int *array, int size, int (*cmp)(int)(int))
+int int_index(int *array, int size, int (*cmp)(int))
 {
 	int i;
-	
+
 	if (array == 0 || cmp == 0)
-		return(-1);
+		return (-1);
 
 	for (i = 0; i < size; i++)
 	{
