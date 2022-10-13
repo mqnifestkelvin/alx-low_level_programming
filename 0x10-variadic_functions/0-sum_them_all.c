@@ -1,5 +1,4 @@
 #include "variadic_functions.h"
-#include <stdio.h>
 #include <stdarg.h>
 /**
  * sum_them_all - This function returns the sun of a variable
