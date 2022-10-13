@@ -34,10 +34,10 @@ void print_strings(const char *separator, const unsigned int n, ...)
 
 			printf("%s", ptr);
 		}
-		
-		if (i !=(n - 1) && separator != 0)
+
+		if (i != (n - 1) && separator != 0)
 		{
-			printf("%s", separator); 
+			printf("%s", separator);
 		}
 	}
 	printf("\n");
