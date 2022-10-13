@@ -1,4 +1,5 @@
 #ifndef _cal_h_
+#define _cal_h_
 /**
  * Description: Header file containing all the structs
  * and function prototypes used by the 3-main.c file.
