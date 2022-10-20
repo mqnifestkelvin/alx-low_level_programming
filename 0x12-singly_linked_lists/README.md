@@ -425,7 +425,7 @@ julien@ubuntu:~/0x12. Singly linked lists$
 ### 5. The Hare and the Tortoise
 Write a function that prints `You're beat! and yet, you must allow,\nI bore my house upon my back!\n` before the `main` function is executed.
 
-(https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/9/de3291ccf5b255fff6ce37bfde7a13f481e7ed0c.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20221020%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20221020T211813Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=c2b7f0b0264c4cbde2c92c4ed8864a2d4fd03684c723583bef078eebc5d742e7)
+![alt text](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/9/de3291ccf5b255fff6ce37bfde7a13f481e7ed0c.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20221020%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20221020T211813Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=c2b7f0b0264c4cbde2c92c4ed8864a2d4fd03684c723583bef078eebc5d742e7)
 
 You are allowed to use the `printf` function
 ```
