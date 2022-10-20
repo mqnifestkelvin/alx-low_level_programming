@@ -1,17 +1,15 @@
 # Topic: Singly linked lists
-concepts `C`, `Algorithm` `Data structure`
+concepts `C`, `Algorithm` and  `Data structure`
 
 *****************************************************************************************
 
 ## Table of Contents
 <!--ts-->
  * [Resources](#resources)
- * [Learning Objectives](#learning objectives)
-   * [General](#general)
- * [Copyright - Plagiarism](#copyright - plagiarism)
+ * [Learning Objectives](#learning-objectives)
+ * [Copyright - Plagiarism](#copyright--plagiarism)
  * [Requirements](#requirements)
-   * [General](#general)
- * [More Info](#more info)
+ * [More Info](#more-info)
  * [Task](#task)
 <!--te-->
 
@@ -78,11 +76,11 @@ typedef struct list_s
 ### 0. Print list
 Write a function that prints all the elements of a list_t list.
 
-	* Prototype: `size_t print_list(const list_t *h);`
-	* Return: the number of nodes
-	* Format: see example
-	* If `str` is `NULL`, print `[0]` `(nil)`
-	* You are allowed to use `printf`
+* Prototype: `size_t print_list(const list_t *h);`
+* Return: the number of nodes
+* Format: see example
+* If `str` is `NULL`, print `[0]` `(nil)`
+* You are allowed to use `printf`
 ```
 julien@ubuntu:~/0x12. Singly linked lists$ cat 0-main.c
 #include <stdlib.h>
@@ -142,7 +140,7 @@ julien@ubuntu:~/0x12. Singly linked lists$
 ### 1. List length
 Write a function that returns the number of elements in a linked `list_t` list.
 
-Prototype: `size_t list_len(const list_t *h);`
+* Prototype: `size_t list_len(const list_t *h);`
 ```
 julien@ubuntu:~/0x12. Singly linked lists$ cat 1-main.c
 #include <stdlib.h>
@@ -190,10 +188,10 @@ julien@ubuntu:~/0x12. Singly linked lists$
 ### 2. Add node
 Write a function that adds a new node at the beginning of a `list_t list`.
 
-Prototype: list_t `*add_node(list_t **head, const char *str);`
-Return: the address of the new element, or `NULL` if it failed
-`str` needs to be duplicated
-You are allowed to use `strdup`
+* Prototype: list_t `*add_node(list_t **head, const char *str);`
+* Return: the address of the new element, or `NULL` if it failed
+* `str` needs to be duplicated
+* You are allowed to use `strdup`
 ```
 julien@ubuntu:~/0x12. Singly linked lists$ cat 2-main.c
 #include <stdlib.h>
@@ -280,10 +278,10 @@ julien@ubuntu:~/0x12. Singly linked lists$
 ### 3. Add node at the end
 Write a function that adds a new node at the end of a `list_t` list.
 
-	* Prototype: `list_t` `*add_node_end(list_t **head, const char *str);`
-	* Return: the address of the new element, or `NULL` if it failed
-	* `str` needs to be duplicated
-	* You are allowed to use `strdup`
+* Prototype: `list_t` `*add_node_end(list_t **head, const char *str);`
+* Return: the address of the new element, or `NULL` if it failed
+* `str` needs to be duplicated
+* You are allowed to use `strdup`
 ```
 julien@ubuntu:~/0x12. Singly linked lists$ cat 3-main.c
 #include <stdlib.h>
@@ -427,7 +425,7 @@ julien@ubuntu:~/0x12. Singly linked lists$
 ### 5. The Hare and the Tortoise
 Write a function that prints `You're beat! and yet, you must allow,\nI bore my house upon my back!\n` before the `main` function is executed.
 
-https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/9/de3291ccf5b255fff6ce37bfde7a13f481e7ed0c.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20221020%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20221020T211813Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=c2b7f0b0264c4cbde2c92c4ed8864a2d4fd03684c723583bef078eebc5d742e7
+(#https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/9/de3291ccf5b255fff6ce37bfde7a13f481e7ed0c.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20221020%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20221020T211813Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=c2b7f0b0264c4cbde2c92c4ed8864a2d4fd03684c723583bef078eebc5d742e7)
 
 You are allowed to use the `printf` function
 ```
