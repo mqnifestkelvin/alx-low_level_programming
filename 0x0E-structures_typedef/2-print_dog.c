@@ -9,7 +9,7 @@
 
 void print_dog(dog *d)
 {
-	if (d != 0)
+	if (d)
 	{
 		printf("Name: %s", d->name ? d->name : "(nil)");
 		printf("Name: %s", d->age);
