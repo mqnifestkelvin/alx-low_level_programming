@@ -11,9 +11,9 @@ void print_dog(dog *d)
 {
 	if (d)
 	{
-		printf("Name: %s", d->name ? d->name : "(nil)");
-		printf("Age: %s", d->age);
-		printf("Owner: %s", d->owner ? d->owner : "(nil)");
+		printf("Name: %s\n", d->name ? d->name : "(nil)");
+		printf("Age: %f\n", d->age);
+		printf("Owner: %s\n", d->owner ? d->owner : "(nil)");
 
 	}
 }
